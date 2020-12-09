@@ -1,0 +1,39 @@
+
+
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title style="text-align: center;font-weight: bold;">Forma de Trabajo</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <p style="text-align: center;">Distancia:</p>
+              <div class="id_100">
+               <select name="" id="distancia" data-native-menu="true" data-theme="a" class="form-control form-control-sm">
+                <option value="0" data-placeholder="true" id="dis">Seleccione</option>
+                 <option value="100">100</option>
+                 <option value="300">300</option>
+                 <option value="500">500</option>
+                 <option value="1000">1000</option>
+                 <option value="1500">1500</option>
+                 <option value="2000">2000</option>
+                 <option value="2500">2500</option>
+                 <option value="5000">5000</option>
+                </select>
+               </div>
+                    <br>    
+                 <div padding>
+                  <ion-button expand="block" type="buttom" (click)="onSubmit()" color="primary" style="color: #fff;" >Cambiar</ion-button>
+                 
+                </div>
+
+         
+<footer >
+  &copy;Taxis Telecoper
+</footer>
+   
+</ion-content>

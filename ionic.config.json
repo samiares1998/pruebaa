@@ -1,0 +1,8 @@
+{
+  "name": "conductor",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

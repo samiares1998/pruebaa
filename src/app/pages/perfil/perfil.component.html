@@ -1,0 +1,45 @@
+<ion-router-outlet id="main-content" >
+  <ion-header [translucent]="true">
+    <ion-toolbar >
+      <ion-buttons slot="start">
+        <ion-button>
+          <a href="/welcome"> <ion-icon name="arrow-undo-outline"  style="font-size: 25px;"></ion-icon></a>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center" style="
+font-weight: bold;">Perfil</ion-title>
+
+<ion-buttons slot="end">
+  <ion-button>
+    <ion-icon name="exit-outline"  style="font-size: 25px;"></ion-icon>
+  </ion-button>
+</ion-buttons>
+
+
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true" style="text-align: center;">
+    
+    <br>
+    <br>
+    <img  id="myImage" src="assets/icon/logoPasajero.png" style=" margin-left: auto;margin-right: auto;display: block;width:120px;height:120px;">
+    <br>
+    <br>
+
+  <p>Documento: 11111111</p>
+  <p>Nombres: 1111111</p>
+  <p>UserID:12312333</p>
+   <br>
+   <div padding>
+    <ion-button expand="block" type="buttom"  (click)="presentModal()" color="primary" style="color: #fff;" >Cambiar Contraseña</ion-button>
+   
+  </div>
+  </ion-content>
+
+
+  <footer >
+    &copy;Taxis Telecoper
+  </footer>
+
+</ion-router-outlet>

@@ -1,0 +1,47 @@
+<ion-content  style="background: #6d0000;" color="#6d0000">
+  <div style="background: #6d0000;height: 100%;" class="container">
+
+
+
+
+          <br>
+          <div text-center>
+            <h2 style="color: #fff;font-size: 28px;font-weight: bold;">Iniciar Sessión</h2>
+          </div>
+          <div >
+            <ion-label style="color: #fff;font-weight: bold;">Número Documento</ion-label>
+           
+              
+              <input id="uid" name="uid" type="number" [(ngModel)]="documento" class="form-control" placeholder="Documento" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type = "number"
+              maxlength = "10" required/>
+              <br>
+          
+           
+            <ion-label style="color: #fff;font-weight: bold;">Password</ion-label>
+           
+             
+              <input name="pass" type="password" maxlength="25"  [(ngModel)]="password" class="form-control" placeholder="password" required/>
+           
+        
+          </div>
+          <br>
+          <div padding>
+            <ion-button expand="block" type="buttom" (click)="onSubmitLogin()" color="medium" style="color: #fff;">Iniciar sesión</ion-button>
+           
+          </div>
+      
+    <hr>
+  
+  <div padding>
+    <p style="color:white">Aún no estas registrado?<a id="Signup" class="btn btn-info btn-block" href="/register" style="background-color:gray" >Registrate</a></p>
+   
+    <br>
+    <p style="color:white"><a href="/register"  style="color:#fff">Olvidaste tu contraseña?</a></p>
+  </div>
+  
+</div>
+<footer >
+  &copy;Taxis Telecoper
+</footer>
+</ion-content>

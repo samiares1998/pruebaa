@@ -1,0 +1,41 @@
+
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title style="text-align: center;font-weight: bold;">  MENSAJE AL PASAJERO</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div style="padding: 30px;">
+
+<fieldset data-role="controlgroup">
+  <input type="radio" name="radio-pasajero-1" id="radio-mensaje-1-0"  class="form-check-input" value="Estoy al frente de su Dirección. Por Favor Atiéndame" />
+  <label for="radio-mensaje-1-0">Enviar HR</label>
+  <br>
+  <input type="radio" name="radio-pasajero-1" id="radio-mensaje-1-1"  class="form-check-input" value="Confirme dirección o ubicación completa" />
+  <label for="radio-mensaje-1-1">Confirme Direccion</label>
+  <br>
+  <input type="radio" name="radio-pasajero-1" id="radio-mensaje-1-2"  class="form-check-input"value="Voy en camino, llego en 5 minutos" />
+  <label for="radio-mensaje-1-2">Llego en 5</label>
+  <br>
+  <input type="radio" name="radio-pasajero-1" id="radio-mensaje-1-3" class="form-check-input" value="Estoy llegando a la dirección, no puedo parquear" />
+  <label for="radio-mensaje-1-3">No puedo parquear</label>
+              
+</fieldset>
+<br>
+<div class="row"> 
+  <div class="col-12"> 
+    <textarea  rows="2" name="txtMensaje-1" id="txtMensaje-1" placeholder="Escriba un mensaje" autocomplete="on" maxlength="512" style="font-weight: bold;font-size: 1.25em;width: 90%;margin-left: 5px;"></textarea>
+
+  </div>
+</div>
+<div padding>
+  <ion-button expand="block" type="buttom" (click)="onSubmit()" color="primary" style="color: #fff;" >Enviar</ion-button>
+ 
+</div>
+</div>
+</ion-content>

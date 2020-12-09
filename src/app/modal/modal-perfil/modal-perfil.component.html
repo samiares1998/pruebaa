@@ -1,0 +1,53 @@
+
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title style="text-align: center;font-weight: bold;">Cambiar Contraseña</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <div class="container" style="padding: 20px;">
+<br>
+    <div >
+      <ion-label style="color: #000;font-weight: bold;">Contraseña Antigua</ion-label>
+     
+        
+        <input id="uid" name="uid" type="number" [(ngModel)]="antigua" class="form-control" placeholder="Contraseña Antigua" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number"
+        maxlength = "10" required/>
+        <br>
+    
+     
+      <ion-label style="color: #000;font-weight: bold;">Nueva Contraseña</ion-label>
+     
+       
+        <input name="pass" type="password" maxlength="25"  [(ngModel)]="nueva" class="form-control" placeholder="Nueva Contraseña" required/>
+     <br>
+      
+     <ion-label style="color: #000;font-weight: bold;">Confirmar Contraseña</ion-label>
+     
+       
+     <input name="pass" type="password" maxlength="25"  [(ngModel)]="confirmar" class="form-control" placeholder="Confirmar Contraseña" required/>
+  
+  
+    </div>
+    <br>
+    <div padding>
+      <ion-button expand="block" type="buttom" (click)="onSubmit()" color="primary" style="color: #fff;" >Cambiar</ion-button>
+     
+    </div>
+
+<hr>
+</div>
+
+<footer >
+  &copy;Taxis Telecoper
+</footer>
+
+</ion-content>

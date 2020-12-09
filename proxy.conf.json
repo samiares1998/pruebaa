@@ -1,0 +1,8 @@
+{
+    "/apidemo/*": {
+      "target": "http://app.telecoper.com:19763/TelecoperSiteOneRS_1.0.0/services/telecoper_site_one_r_s/",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin":true
+    }
+  }
